@@ -1,0 +1,6 @@
+[submodule "C4Examples"]
+	path = C4Examples
+	url = https://github.com/Ollstar/C4Examples.git
+[submodule "C4iOS"]
+	path = C4iOS
+	url = https://github.com/C4Framework/C4iOS.git
