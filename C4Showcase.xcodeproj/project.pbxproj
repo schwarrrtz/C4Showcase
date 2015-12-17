@@ -27,6 +27,8 @@
 		63A16FA31C20B8320091ACCD /* Shapes08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A16F901C20B8320091ACCD /* Shapes08.swift */; };
 		63A16FA41C20B8320091ACCD /* Shapes09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A16F911C20B8320091ACCD /* Shapes09.swift */; };
 		63A16FA71C20B8320091ACCD /* Shapes12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A16F941C20B8320091ACCD /* Shapes12.swift */; };
+		63E89D691C222B5300F9BECB /* C4ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E89D681C222B5300F9BECB /* C4ExampleViewController.swift */; };
+		63E89D6B1C2244C300F9BECB /* basic.html in Resources */ = {isa = PBXBuildFile; fileRef = 63E89D6A1C2244C300F9BECB /* basic.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +68,8 @@
 		63A16F901C20B8320091ACCD /* Shapes08.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shapes08.swift; path = C4Examples/C4Examples/Shapes08.swift; sourceTree = "<group>"; };
 		63A16F911C20B8320091ACCD /* Shapes09.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shapes09.swift; path = C4Examples/C4Examples/Shapes09.swift; sourceTree = "<group>"; };
 		63A16F941C20B8320091ACCD /* Shapes12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shapes12.swift; path = C4Examples/C4Examples/Shapes12.swift; sourceTree = "<group>"; };
+		63E89D681C222B5300F9BECB /* C4ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C4ExampleViewController.swift; sourceTree = "<group>"; };
+		63E89D6A1C2244C300F9BECB /* basic.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = basic.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				63A16E921C20A06A0091ACCD /* C4ShowcaseListViewController.swift */,
 				63A16E941C20A20A0091ACCD /* C4ShowcaseCell.swift */,
 				63A16EA31C20B09C0091ACCD /* C4ShowcaseHeader.swift */,
+				63E89D681C222B5300F9BECB /* C4ExampleViewController.swift */,
+				63E89D6A1C2244C300F9BECB /* basic.html */,
 			);
 			path = C4Showcase;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				63A16E771C200E3C0091ACCD /* LaunchScreen.storyboard in Resources */,
 				63A16E741C200E3C0091ACCD /* Assets.xcassets in Resources */,
 				63A16E721C200E3C0091ACCD /* Main.storyboard in Resources */,
+				63E89D6B1C2244C300F9BECB /* basic.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A16F6D1C20B7DE0091ACCD /* Views01.swift in Sources */,
+				63E89D691C222B5300F9BECB /* C4ExampleViewController.swift in Sources */,
 				63A16F6E1C20B7DE0091ACCD /* Views02.swift in Sources */,
 				63A16F701C20B7DE0091ACCD /* Views04.swift in Sources */,
 				63A16F711C20B7DE0091ACCD /* Views05.swift in Sources */,

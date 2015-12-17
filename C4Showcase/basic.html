@@ -1,0 +1,35 @@
+<!-- sample code in html format -->
+<!-- we will need to convert all the examples into html somehow, possibly with a script -->
+ 
+<!doctype html>
+<html>
+<head>
+</head>
+
+<style>
+    body {
+        background-color: transparent;
+        font-family: Menlo;
+        font-size: 9pt;
+    }
+</style>
+
+<body>
+<br/><br/><br/>
+
+override func setup() { <br/>
+<br/>
+    //create and position the shape <br/>
+    circle = C4Circle(center: self.canvas.center, radius: 50) <br/>
+<br/>
+    //change the line width <br/>
+    circle.lineWidth = 10 <br/>
+<br/>
+    //add the shapes to the canvas <br/>
+    self.canvas.add(circle) <br/>
+<br/>
+} <br/>
+
+</body>
+
+</html>

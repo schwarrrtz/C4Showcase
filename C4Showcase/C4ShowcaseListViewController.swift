@@ -69,9 +69,11 @@ extension C4ShowcaseListViewController : UICollectionViewDataSource {
 extension C4ShowcaseListViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let canvasController = C4ExampleFactory.createController(indexPath.section, row: indexPath.row) as UIViewController!
+        
+        let canvas = C4ExampleFactory.createController(indexPath.section, row: indexPath.row) as UIViewController!
+        let example = C4ExampleViewController.create(canvas)
         let sectionName = C4ExampleFactory.sectionAtIndex(indexPath.section).sectionName
-        canvasController.navigationItem.title = "\(sectionName) \(indexPath.row)"
-        self.navigationController?.pushViewController(canvasController, animated: true)
+        example.navigationItem.title = "\(sectionName) \(indexPath.row)"
+        self.navigationController?.pushViewController(example, animated: true)
     }
 }

@@ -32,5 +32,9 @@ class C4ShowcaseAppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func application(app: UIApplication, supportedInterfaceOrientationsForWindow w: UIWindow?) -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
 }
 
