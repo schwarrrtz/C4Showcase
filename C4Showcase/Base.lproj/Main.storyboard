@@ -173,7 +173,6 @@
                     <size key="freeformSize" width="320" height="480"/>
                     <connections>
                         <outlet property="canvasContainer" destination="lnz-3i-1lZ" id="26f-Kd-g0P"/>
-                        <outlet property="codeButton" destination="2uf-On-Nje" id="0fw-u1-MmG"/>
                         <outlet property="codeContainer" destination="UvB-lN-zJu" id="oTY-vh-erI"/>
                         <outlet property="webView" destination="lRf-6r-IGG" id="FvJ-UP-J4R"/>
                     </connections>

@@ -21,13 +21,12 @@ import UIKit
 
 class C4ExampleViewController : UIViewController {
     
-    @IBOutlet var canvasContainer: UIView?
-    @IBOutlet var codeContainer: UIView?
-    @IBOutlet var webView: UIWebView?
-    @IBOutlet var codeButton: UIBarButtonItem?
+    @IBOutlet var canvasContainer: UIView!
+    @IBOutlet var codeContainer: UIView!
+    @IBOutlet var webView: UIWebView!
     
-    var canvasController: UIViewController?
-    var codeViewHeightConstraint: NSLayoutConstraint?
+    var canvasController: UIViewController!
+    var codeViewHeightConstraint: NSLayoutConstraint!
     var codeViewIsVisible: Bool = false
     
     class func create(canvas: UIViewController) -> C4ExampleViewController {
@@ -44,44 +43,44 @@ class C4ExampleViewController : UIViewController {
     override func viewDidLoad() {
         
         // configure subviews & child controller
-        self.addChildViewController(canvasController!)
-        canvasController!.didMoveToParentViewController(self)
+        self.addChildViewController(canvasController)
+        canvasController.didMoveToParentViewController(self)
         
-        canvasController!.view.frame = canvasContainer!.bounds
-        canvasController!.viewWillAppear(false)
-        self.canvasContainer!.add(canvasController!.view)
-        canvasController!.viewDidAppear(false)
+        canvasController.view.frame = canvasContainer.bounds
+        canvasController.viewWillAppear(false)
+        self.canvasContainer.add(canvasController.view)
+        canvasController.viewDidAppear(false)
         
         // store height constraint of webview for use in animation
-        for constraint: NSLayoutConstraint in codeContainer!.constraints {
+        for constraint: NSLayoutConstraint in codeContainer.constraints {
             if constraint.firstAttribute == .Height {
                 codeViewHeightConstraint = constraint
             }
         }
         
         // webview should be hidden initially
-        codeViewHeightConstraint!.constant = 0
+        codeViewHeightConstraint.constant = 0
         
         // load html
         let url = NSBundle.mainBundle().URLForResource("basic", withExtension: "html")
         let request = NSURLRequest(URL: url!)
-        webView?.loadRequest(request)
+        webView.loadRequest(request)
     }
     
     @IBAction func viewCodeButtonClicked(sender: UIBarButtonItem) {
         
         UIView.animateWithDuration(0.2) {
             if self.codeViewIsVisible {
-                self.codeViewHeightConstraint!.constant = 0
+                self.codeViewHeightConstraint.constant = 0
             }
             else {
-                self.codeViewHeightConstraint!.constant = self.canvasContainer!.frame.size.height
+                self.codeViewHeightConstraint.constant = self.canvasContainer.frame.size.height
             }
             
             self.view.layoutIfNeeded()
         }
         
         codeViewIsVisible = !codeViewIsVisible
-        codeButton?.title = codeViewIsVisible ? "Hide Code" : "View Code"
+        sender.title = codeViewIsVisible ? "Hide Code" : "View Code"
     }
 }
